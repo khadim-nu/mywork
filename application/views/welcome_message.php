@@ -54,15 +54,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-logo2.png" alt="Logo" />
                     </div>
                 </div>
-                <form id="servey"  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
+                <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
 
                     <div class="form-group">
                         <label for="inputType" class="col-sm-2   control-label">Your email address: </label>
                         <div class="col-sm-4">
-                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" data-parsley-required/>
+                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" data-parsley-type="email" required=""/>
                         </div>
                     </div>
-                    <p>Thank you!</p>
+                    <p class="col-sm-7 pull-right">Thank you!</p>
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="col-sm-6">
