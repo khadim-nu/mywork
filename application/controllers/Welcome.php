@@ -21,14 +21,18 @@ class Welcome extends CI_Controller {
      */
     public function __construct() {
         parent::__construct();
-        $this->load->helper('url','text','form');
+        $this->load->helper('url', 'text', 'form');
     }
 
     public function index() {
         $this->load->view('welcome_message');
     }
-    public function submit_servey(){
-        var_dump($_POST);
+
+    public function submit_servey() {
+
+        $this->load->model("Servey_model");
+        $this->Servey_model->save_responses();
+        redirect("welcome");
     }
 
 }

@@ -8,7 +8,7 @@ body{
     background-color: #ffffff;
     padding: 0 20px;
     overflow: hidden;
-    margin: 3% 7%;
+    margin: 3% 20%;
 
 }
 
@@ -35,6 +35,20 @@ body{
     border-right: 0px; 
 }
 #logo{
-    width: 30%;
+    width: 100%;
     height: 300px;
+}
+#logo-2{
+     width: 100%;
+    height: 140px;
+}
+.left-block{
+    width: 40%;
+}
+.right-block{
+    margin: 5%;
+    width: 30%;
+}
+#servey{
+    margin:3% 2%;
 }
