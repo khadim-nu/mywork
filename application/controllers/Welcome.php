@@ -30,8 +30,8 @@ class Welcome extends CI_Controller {
 
     public function submit_servey() {
 
-        $this->load->model("Servey_model");
-        $this->Servey_model->save_responses();
+        $this->load->model("Responses_model");
+        $this->Responses_model->save_responses();
         redirect("welcome");
     }
 

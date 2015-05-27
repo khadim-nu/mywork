@@ -12,37 +12,12 @@ class Migration_Add_responses extends CI_Migration {
                 'unsigned' => TRUE,
                 'auto_increment' => TRUE
             ),
-            'answer1' => array(
+            'email' => array(
                 'type' => 'VARCHAR',
                 'constraint' => '100',
-                'null' => TRUE,
+                'null' => FALSE,
             ),
-            'answer2' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => TRUE,
-            ),
-            'answer3' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => TRUE,
-            ),
-            'answer4' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => TRUE,
-            ),
-            'answer5' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => TRUE,
-            ),
-            'answer6' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => TRUE,
-            ),
-            'answer7' => array(
+            'comment' => array(
                 'type' => 'VARCHAR',
                 'constraint' => '100',
                 'null' => TRUE,
