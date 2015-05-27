@@ -23,6 +23,7 @@ class Migration_Add_responses extends CI_Migration {
                 'null' => TRUE,
             )
         ));
+        $this->dbforge->add_field("created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP");
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('responses');
     }

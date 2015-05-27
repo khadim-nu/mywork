@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             Free Beta version poker game:
                         </p>
                         <p>
-                            <stong> Poker-With-Friends </stong>
+                        <stong> Poker-With-Friends </stong>
                         </p>
                         <li> Play poker with 1, 2, 3, or 4 friends.</li>
                         <li> No ads!  No in-app fees!</li>
@@ -59,10 +59,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="form-group">
                         <label for="inputType" class="col-sm-2   control-label">Your email address: </label>
                         <div class="col-sm-4">
-                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" data-parsley-type="email" required=""/>
+                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" data-parsley-type="email" />
                         </div>
                     </div>
                     <p class="col-sm-7 pull-right">Thank you!</p>
+                    <div class="row">
+                        <div class="col-md-14 ">
+                            <div class="col-sm-6">
+                                <p class="col-sm-7 pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6 ">
                             <div class="col-sm-6">
@@ -70,7 +77,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
+
+
                 </form>
+
 
             </div>
         </div>
