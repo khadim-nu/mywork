@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h1 class="title">Poker-With-Friends</h1>
                 <h4 class="title">Easy to Play – Hard to Master</h4>
             </div>
-            <div class="container">
-                <div class="row">
+            <div class="container ">
+                <div class="row" align-center>
                     <div class="left-block col-md-6">
                         <img id="logo" src="<?= base_url(); ?>assets/images/poker-logo.jpg" alt="Logo" />
                     </div>
@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-center">
                     <div class="col-md-7 ">
                         <p> We are developing a new version of five-card poker.  Played by placing cards on board layout.</p>
                         <p> First release will be PC/Laptop based, followed by mobile app.</p>

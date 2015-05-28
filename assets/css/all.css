@@ -12,6 +12,9 @@ body{
     margin: 0% 10%;
 
 }
+.row{
+    margin: 0 auto;
+}
 .header {
   margin: 0% -2%;
   background-color: rgba(21, 25, 25, 0.8);
@@ -47,7 +50,7 @@ body{
 }
 .right-block{
     font-size: 20px;
-    margin: 7% 3%;
+    margin: 7% 0%;
     width: 35%;
 }
 
