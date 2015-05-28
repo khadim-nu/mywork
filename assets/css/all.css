@@ -16,7 +16,7 @@ body{
     margin: 1%;
     margin-right: 0%;
     margin-left: 5%;
-   
+
 }
 .header {
     margin: 0% -2%;
@@ -29,7 +29,8 @@ body{
 .container{
     width: 100%;
     margin: 0% 0%;
-    
+    font-size: 20px;
+
 }
 .title{
     text-align: center;
@@ -49,8 +50,9 @@ body{
     height: 100%;
 }
 #logo-2{
-    width: 121px;
-    height: 121px;
+    width: 200%;
+    height: 200%;
+    margin-top:35%;
 }
 .left-block{
     width: 50%;
@@ -70,7 +72,7 @@ body{
     display: inline-block;
     // padding: 6px 12px;
     margin-bottom: 0;
-   // margin:0% 100%;
+    // margin:0% 100%;
     font-size: 20px;
     line-height: 1.5;
     border-radius: 0px;
@@ -78,4 +80,11 @@ body{
 }
 .btn-margin{
     margin: 0% 27%;
+}
+.form-control {
+    height: 45px;
+    font-size: 20px;
+}
+.thank{
+    margin-top: 1%;
 }

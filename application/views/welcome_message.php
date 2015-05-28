@@ -41,36 +41,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <li> Not just luck.  </li>
                         <li> Play offense and defense.</li>
                         </p>
+
+                        <div class="col-md-3">
+                            <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
+                        </div>
                     </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-8 ">
-                        <p> We are developing a new version of five-card poker.  Played by placing cards on board layout.</p>
-                        <p> First release will be PC/Laptop based, followed by mobile app.</p>
-                        <p> If you would like information as it becomes available, or a free down load when it is ready,</p>
-                        <p> send us your email address, which we will not share with anyone.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
-                    </div>
+                    <p> We are developing a new version of five-card poker.  Played by placing cards on board layout
+                        First release will be PC/Laptop based, followed by mobile app.
+                    </p>
+                    <p> If you would like information as it becomes available, or a free down load when it is ready,
+                        send us your email address, which we will not share with anyone.
+                    </p>
                 </div>
                 <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
 
-                    
+
                     <div class="row">
                         <label for="inputType" class="col-sm-3   control-label">Your email address: </label>
                         <div class="col-sm-4">
                             <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />
                         </div>
+                        <p class="thank">Thank you!</p>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 ">
                             <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
                         </div>
-                        <div class="col-md-2">
-                            <p class="pull-right">Thank you!</p>
-                        </div>
+
                     </div>
                     <div class="row btn-margin">
                         <div class="col-md-10  ">
