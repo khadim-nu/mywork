@@ -29,7 +29,7 @@ body{
 .container{
     width: 100%;
     margin: 0% 0%;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .title{
@@ -59,7 +59,7 @@ body{
     margin-top: 2%;
 }
 .right-block{
-    font-size: 22px;
+    font-size: 20px;
     margin: 7% 0% 7% 27px;
     width: 45%;
 }
