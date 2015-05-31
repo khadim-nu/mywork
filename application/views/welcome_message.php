@@ -21,58 +21,62 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="wrapper">
             <div class="header">
-                <h1 class="title">Poker-With-Friends</h1>
+                <h1 class="title">Poker-With-Friends™</h1>
                 <h4 class="title">Easy to Play – Hard to Master</h4>
             </div>
             <div class="container ">
                 <div class="row" align-center>
                     <div class="left-block col-md-6">
-                        <img id="logo" src="<?= base_url(); ?>assets/images/poker-logo.jpg" alt="Logo" />
+                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/poker2.jpg" alt="Logo" />
                     </div>
                     <div class="right-block col-md-6">
                         <p>
                             Free Beta version poker game:
                         </p>
                         <p>
-                        <stong> Poker-With-Friends </stong>
+                        <stong> Poker-With-Friends™ </stong>
                         </p>
                         <li> Play poker with 1, 2, 3, or 4 friends.</li>
                         <li> No ads!  No in-app fees!</li>
                         <li> Not just luck.  </li>
                         <li> Play offense and defense.</li>
                         </p>
+
+                        <div class="col-md-3">
+                            <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
+                        </div>
                     </div>
+
                 </div>
-                <div class="row align-center">
-                    <div class="col-md-7 ">
-                        <p> We are developing a new version of five-card poker.  Played by placing cards on board layout.</p>
-                        <p> First release will be PC/Laptop based, followed by mobile app.</p>
-                        <p> If you would like information as it becomes available, or a free down load when it is ready,</p>
-                        <p> send us your email address, which we will not share with anyone.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-logo2.png" alt="Logo" />
-                    </div>
+
+                <div class="row">
+                    <p> We are developing a new version of five-card poker.  Played by placing cards on board layout
+                        First release will be PC/Laptop based, followed by mobile app.
+                    </p>
+                    <p> If you would like information as it becomes available, or a free down load when it is ready,
+                        send us your email address, which we will not share with anyone.
+                    </p>
                 </div>
                 <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
 
-                    <div class="form-group">
-                        <label for="inputType" class="col-sm-2   control-label">Your email address: </label>
-                        <div class="col-sm-4">
-                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" data-parsley-type="email" />
-                        </div>
-                    </div>
-                    <p class="col-sm-7 pull-right">Thank you!</p>
+
                     <div class="row">
-                        <div class="col-md-14 ">
-                            <div class="col-sm-6">
-                                <p class="col-sm-7 pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
-                            </div>
+                        <label for="inputType" class="col-sm-3   control-label">Your email address: </label>
+                        <div class="col-sm-4">
+                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />
                         </div>
+                        <p class="thank">Thank you!</p>
                     </div>
+
                     <div class="row">
                         <div class="col-md-6 ">
-                            <div class="col-sm-6">
+                            <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
+                        </div>
+
+                    </div>
+                    <div class="row btn-margin">
+                        <div class="col-md-10  ">
+                            <div class="align-center">
                                 <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
                             </div>
                         </div>
