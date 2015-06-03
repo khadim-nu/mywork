@@ -30,7 +30,7 @@ body{
 .container{
     width: 100%;
     margin: 0% 0%;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .title{
@@ -38,7 +38,9 @@ body{
     margin: 0% 30%;
     color: whitesmoke;
 }
-
+.heading{
+     font-weight: bold;
+}
 .custom{
     border: 4px solid rgb(204, 204, 204);
     border-top: 0px; 
@@ -47,25 +49,22 @@ body{
     border-radius: 0px;
 }
 #logo{
-    width: 100%;
+    width: 103%;
     height: 100%;
 }
 #logo-2{
     width: 200%;
     height: 200%;
-    margin-top:35%;
+    margin-top:21%;
 }
 .left-block{
-    width: 50%;
+    width: 40%;
     margin-top: 2%;
 }
 .right-block{
     font-size: 20px;
 
-   // margin: 7% 0%;
-  //  width: 35%;
-
-    margin: 7% 0% 7% 5px;
+    margin: 7% 0% 7% 27px;
     width: 45%;
 }
 

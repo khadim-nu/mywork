@@ -7,18 +7,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <title>Poker-With-Friends</title>
 
         <link href="<?= base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
-        <link href="<?= base_url(); ?>assets/css/sweetalert2.css" rel="stylesheet">
         <link href="<?= base_url(); ?>assets/css/all.css" rel="stylesheet">
 
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/bootstrap.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/parsley.min.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/sweetalert2.min.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/all.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-ui.min.js"></script>
     </head>
     <body>
-
         <div class="wrapper">
             <div class="header">
                 <h1 class="title">Poker-With-Friends™</h1>
@@ -27,35 +24,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container ">
                 <div class="row" align-center>
                     <div class="left-block col-md-6">
-                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/poker2.jpg" alt="Logo" />
+                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/board.png" alt="Logo" />
                     </div>
                     <div class="right-block col-md-6">
-                        <p>
-                            Free Beta version poker game:
-                        </p>
-                        <p>
-                        <stong> Poker-With-Friends™ </stong>
-                        </p>
-                        <li> Play poker with 1, 2, 3, or 4 friends.</li>
-                        <li> No ads!  No in-app fees!</li>
-                        <li> Not just luck.  </li>
-                        <li> Play offense and defense.</li>
-                        </p>
-
+                        <li><stong class="heading">Poker-With-Friends™ </stong></li>
+                        <li>Free Beta version poker game.</li>
+                        <li>Play poker with 1, 2, 3, or 4 friends.</li>
+                        <li>No ads!  No in-app fees!</li>
+                        <li>"One Card Discard" to speed up the game.</li>
+                        <li>Play offense and defense.</li>
                         <div class="col-md-3">
                             <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
                         </div>
                     </div>
-
                 </div>
 
                 <div class="row">
-                    <p> We are developing a new version of five-card poker.  Played by placing cards on board layout
-                        First release will be PC/Laptop based, followed by mobile app.
-                    </p>
-                    <p> If you would like information as it becomes available, or a free down load when it is ready,
-                        send us your email address, which we will not share with anyone.
-                    </p>
+                    <p> We are developing a new version of five-card poker, played by placing cards on a board layout. If you would like information as it becomes available, or a free download when it is ready, please send your e-mail address, which we will not share with anyone.</p>
                 </div>
                 <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
 
@@ -72,7 +57,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-6 ">
                             <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
                         </div>
-
                     </div>
                     <div class="row btn-margin">
                         <div class="col-md-10  ">
@@ -81,11 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
-
-
                 </form>
-
-
             </div>
         </div>
 
