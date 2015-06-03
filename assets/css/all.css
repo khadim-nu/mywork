@@ -13,6 +13,7 @@ body{
 
 }
 .row{
+
     margin: 1%;
     margin-right: 0%;
     margin-left: 5%;
@@ -37,7 +38,9 @@ body{
     margin: 0% 30%;
     color: whitesmoke;
 }
-
+.heading{
+     font-weight: bold;
+}
 .custom{
     border: 4px solid rgb(204, 204, 204);
     border-top: 0px; 
@@ -46,7 +49,7 @@ body{
     border-radius: 0px;
 }
 #logo{
-    width: 100%;
+    width: 103%;
     height: 100%;
 }
 #logo-2{
@@ -55,11 +58,12 @@ body{
     margin-top:21%;
 }
 .left-block{
-    width: 45%;
+    width: 40%;
     margin-top: 2%;
 }
 .right-block{
     font-size: 20px;
+
     margin: 7% 0% 7% 27px;
     width: 45%;
 }
