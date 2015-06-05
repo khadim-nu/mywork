@@ -19,11 +19,16 @@ body{
     margin-left: 5%;
 
 }
-.header {
+.header,.footer {
     margin: 0% -2%;
     background-color: rgba(21, 25, 25, 0.8);
     color: rgba(250, 250, 250, 0.8);
     height: 100px !important;
+    width: 104%;
+    padding: 2% 0%;
+}
+.footer{
+     height: 70px !important;
     width: 104%;
     padding: 2% 0%;
 }

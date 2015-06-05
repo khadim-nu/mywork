@@ -14,6 +14,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/parsley.min.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/all.js"></script>
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-ui.min.js"></script>
+
+        <script type="text/javascript">var switchTo5x = true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "64b58c40-8aa9-4f39-86fc-f44f5fed0280", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
     </head>
     <body>
         <div id="fb-root"></div>
@@ -50,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-6 pull-right counter">
                             <span class="counts">
-                            <span id="site-counts"> Site Viewers: <strong>34254</strong></span>
+                                <span id="site-counts"> Site Viewers: <strong>35</strong></span>
                             </span>
                         </div>
                     </div>
@@ -71,29 +75,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <div class="row">
-                        <div class="col-md-7 ">
+                        <div class="col-md-6 ">
                             <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
                         </div>
 
                     </div>
                     <div class="row ">
-                           <div class="col-md-3">
-                               <span class="counts"> 
-                                   <span id="site-counts">
-                                   Email Counter: <strong><?= $count; ?></strong>
-                                   </span>
-                               </span>
-                           </div>
-                        <div class="col-md-3  ">
+                        <div class="col-md-3">
+                            <div class="align-center counts">
+                                <span id="site-counts">
+                                    Email Counter: <strong><?= $count; ?></strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4  ">
                             <div class="align-center">
                                 <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
                             </div>
                         </div>
                         <div class="col-md-3 fb-like-btn">
-                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                            <span class='st_facebook_large' displayText='Facebook'></span>
+                            <span class='st_twitter_large' displayText='Tweet'></span>
+                            <span class='st_email_large' displayText='Email'></span>
+                            <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="footer">
+                <div class="col-md-7">
+                    <h4 class="title">Poker-With-Friends™</h4>
+                </div>
+                <div class="col-md-7">
+                    <h5 class="title">Easy to Play – Hard to Master</h5>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.facebook.com/poker-with-friends"> <img class="follw-img" src="<?= base_url() . 'assets/images/fb.png'; ?>" alt="" class="img-responsive"></a>
+                    <a href="#">  <img class="follw-img" src="<?= base_url() . 'assets/images/twitter.png'; ?>" alt="" class="img-responsive"></a>
+                </div>
             </div>
         </div>
 
