@@ -16,6 +16,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-ui.min.js"></script>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=907747149242350";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="wrapper">
             <div class="header">
                 <h1 class="title">Poker-With-Friends™</h1>
@@ -24,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container ">
                 <div class="row" align-center>
                     <div class="left-block col-md-6">
-                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/board.png" alt="Logo" />
+                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/poker-image-new.jpg" alt="Logo" />
                     </div>
                     <div class="right-block col-md-6">
                         <li><stong class="heading">Poker-With-Friends™ </stong></li>
@@ -35,6 +47,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <li>Play offense and defense.</li>
                         <div class="col-md-3">
                             <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
+                        </div>
+                        <div class="col-md-6 pull-right counter">
+                            <span class="counts">
+                            <span id="site-counts"> Site Viewers: <strong>34254</strong></span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -54,15 +71,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 ">
+                        <div class="col-md-7 ">
                             <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
                         </div>
+
                     </div>
-                    <div class="row btn-margin">
-                        <div class="col-md-10  ">
+                    <div class="row ">
+                           <div class="col-md-3">
+                               <span class="counts"> 
+                                   <span id="site-counts">
+                                   Email Counter: <strong><?= $count; ?></strong>
+                                   </span>
+                               </span>
+                           </div>
+                        <div class="col-md-3  ">
                             <div class="align-center">
                                 <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
                             </div>
+                        </div>
+                        <div class="col-md-3 fb-like-btn">
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                         </div>
                     </div>
                 </form>

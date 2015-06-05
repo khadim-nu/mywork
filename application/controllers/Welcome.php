@@ -25,7 +25,9 @@ class Welcome extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('welcome_message');
+        $this->load->model("Responses_model");
+        $count = $this->Responses_model->count_responses();
+        $this->load->view('welcome_message', array('count' => $count));
     }
 
     public function submit_servey() {

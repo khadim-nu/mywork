@@ -64,10 +64,13 @@ body{
 .right-block{
     font-size: 20px;
 
-    margin: 7% 0% 7% 27px;
+    margin: 7% 0% 2% 27px;
     width: 45%;
 }
-
+.counter{
+    margin: 7% 2%;
+   
+}
 #servey{
     margin-bottom: 5%;
 }
@@ -91,4 +94,14 @@ body{
 }
 .thank{
     margin-top: 1%;
+}
+.fb-like-btn{
+    height: 1px;
+}
+#site-visits{
+    padding: 1% !important;
+}
+.counts{
+     background: #D0D0D0;
+     padding: 5%;
 }
