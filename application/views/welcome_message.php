@@ -106,10 +106,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </form>
             </div>
             <div class="footer">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h4 class="footer-title">Poker-With-Friends™</h4>
                 </div>
-                <div class="col-md-2 sub-title">
+                <div class="col-md-5 sub-title">
                     <h5>Easy to Play – Hard to Master</h5>
                 </div>
                 <div class="col-md-2 pull-right counter">
