@@ -52,11 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-3">
                             <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
                         </div>
-                        <div class="col-md-6 pull-right counter">
-                            <span class="counts">
-                                <span id="site-counts"> Site Viewers: <strong>35</strong></span>
-                            </span>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -82,39 +78,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="row ">
                         <div class="col-md-3">
-                            <div class="align-center counts">
+<!--                            <div class="col-xs-10 align-center counts">
                                 <span id="site-counts">
                                     Email Counter: <strong><?= $count; ?></strong>
                                 </span>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="col-md-4  ">
                             <div class="align-center">
                                 <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
                             </div>
                         </div>
-                        <div class="col-md-3 fb-like-btn">
+                        <div class="col-md-2 fb-like-btn pull-right">
                             <span class='st_facebook_large' displayText='Facebook'></span>
                             <span class='st_twitter_large' displayText='Tweet'></span>
                             <span class='st_email_large' displayText='Email'></span>
                             <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
                         </div>
+<!--                        <div class="col-md-3">
+                             <div class="col-xs-10 align-center counts">
+                             <span id="site-counts">
+                                <span id="site-counts"> Site Viewers: <strong>35</strong></span>
+                            </span>
+                             </div>
+                        </div>-->
                     </div>
                 </form>
             </div>
             <div class="footer">
-                <div class="col-md-7">
-                    <h4 class="title">Poker-With-Friends™</h4>
-                </div>
-                <div class="col-md-7">
-                    <h5 class="title">Easy to Play – Hard to Master</h5>
-                </div>
-                <div class="col-md-2">
-
-                </div>
                 <div class="col-md-3">
-                    <a href="https://www.facebook.com/poker-with-friends"> <img class="follw-img" src="<?= base_url() . 'assets/images/fb.png'; ?>" alt="" class="img-responsive"></a>
-                    <a href="#">  <img class="follw-img" src="<?= base_url() . 'assets/images/twitter.png'; ?>" alt="" class="img-responsive"></a>
+                    <h4 class="footer-title">Poker-With-Friends™</h4>
+                </div>
+                <div class="col-md-2 sub-title">
+                    <h5>Easy to Play – Hard to Master</h5>
+                </div>
+                <div class="col-md-2 pull-right counter">
+                    <span class="counts" id="site-counts">  <strong><?= $count ?></strong></span>
+                    &nbsp;&nbsp;
+                      <span class="counts" id="site-counts">  <strong><?= $count ?>3535635</strong></span>
                 </div>
             </div>
         </div>

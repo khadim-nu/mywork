@@ -43,6 +43,13 @@ body{
     margin: 0% 30%;
     color: whitesmoke;
 }
+.sub-title{
+    margin-top:-7px;
+}
+.footer-title{
+     margin-left: 30%;
+      margin-top:0px;
+}
 .heading{
      font-weight: bold;
 }
@@ -73,7 +80,7 @@ body{
     width: 45%;
 }
 .counter{
-    margin: 7% 2%;
+    margin-right: 7%;
    
 }
 #servey{
@@ -107,6 +114,6 @@ body{
     padding: 1% !important;
 }
 .counts{
-     background: #D0D0D0;
-     padding: 5%;
+     background: #458;
+     padding: 3%;
 }
