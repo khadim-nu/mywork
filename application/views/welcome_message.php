@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container ">
                 <div class="row" align-center>
                     <div class="left-block col-md-6">
-                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/poker-image-new.jpg" alt="Logo" />
+                        <img id="logo" class="img-responsive" src="<?= base_url(); ?>assets/images/small_board_final.jpg" alt="Logo" />
                     </div>
                     <div class="right-block col-md-6">
                         <li><stong class="heading">Poker-With-Friends™ </stong></li>
@@ -78,11 +78,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="row ">
                         <div class="col-md-3">
-<!--                            <div class="col-xs-10 align-center counts">
-                                <span id="site-counts">
-                                    Email Counter: <strong><?= $count; ?></strong>
-                                </span>
-                            </div>-->
                         </div>
                         <div class="col-md-4  ">
                             <div class="align-center">
@@ -91,17 +86,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-2 fb-like-btn pull-right">
                             <span class='st_facebook_large' displayText='Facebook'></span>
-                            <span class='st_twitter_large' displayText='Tweet'></span>
-                            <span class='st_email_large' displayText='Email'></span>
-                            <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
+                            <!--<span class='st_twitter_large' displayText='Tweet'></span>-->
+                            <!--<span class='st_email_large' displayText='Email'></span>-->
                         </div>
-<!--                        <div class="col-md-3">
-                             <div class="col-xs-10 align-center counts">
-                             <span id="site-counts">
-                                <span id="site-counts"> Site Viewers: <strong>35</strong></span>
-                            </span>
-                             </div>
-                        </div>-->
                     </div>
                 </form>
             </div>
@@ -115,7 +102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-2 pull-right counter">
                     <span class="counts" id="site-counts">  <strong><?= $count ?></strong></span>
                     &nbsp;&nbsp;
-                      <span class="counts" id="site-counts">  <strong><?= $count ?>3535635</strong></span>
+                      <span class="counts" id="site-counts">  <strong><?= $visits_count ?></strong></span>
                 </div>
             </div>
         </div>

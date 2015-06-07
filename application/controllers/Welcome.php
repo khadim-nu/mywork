@@ -27,7 +27,10 @@ class Welcome extends CI_Controller {
     public function index() {
         $this->load->model("Responses_model");
         $count = $this->Responses_model->count_responses();
-        $this->load->view('welcome_message', array('count' => $count));
+        $this->load->model("Visits_model");
+        $this->Visits_model->save_ip();
+        $visits_count = $this->Visits_model->count_visits();
+        $this->load->view('welcome_message', array('count' => $count, "visits_count" => $visits_count));
     }
 
     public function submit_servey() {

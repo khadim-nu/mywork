@@ -65,9 +65,9 @@ body{
     height: 100%;
 }
 #logo-2{
-    width: 200%;
-    height: 200%;
-    margin-top:21%;
+    width: 178px;
+    height: 118px;
+    margin-top:21px;
 }
 .left-block{
     width: 40%;
@@ -76,8 +76,8 @@ body{
 .right-block{
     font-size: 20px;
 
-    margin: 7% 0% 2% 27px;
-    width: 45%;
+    margin: 3% 0% 2% 27px;
+    width: 50%;
 }
 .counter{
     margin-right: 7%;
