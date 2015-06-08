@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <div id="fb-root"></div>
         <div id="fb-root"></div>
-        <script>(function (d, s, id) {
+        <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
                     return;
@@ -44,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="right-block col-md-6">
                         <li><stong class="heading">Poker-With-Friends™ </stong></li>
-                        <li>Free Beta version poker game.</li>
+                        <li>Free Beta version poker game coming.</li>
                         <li>Play poker with 1, 2, 3, or 4 friends.</li>
                         <li>No ads!  No in-app fees!</li>
                         <li>"One Card Discard" to speed up the game.</li>
@@ -52,39 +52,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-3">
                             <img id="logo-2" src="<?= base_url(); ?>assets/images/poker-img.jpg" alt="Logo" />
                         </div>
-                        
+
                     </div>
                 </div>
 
                 <div class="row">
-                    <p> We are developing a new version of five-card poker, played by placing cards on a board layout. If you would like information as it becomes available, or a free download when it is ready, please send your e-mail address, which we will not share with anyone.</p>
+                    <p>We are developing a new version of five-card poker, played by placing cards on a board layout.  It is a combination of poker and a popular word game.</p>
+                    <p>Please let us know if you think you would like to play this game.  Nothing will download as we are simply asking for your opinion.  Thank you.</p>
                 </div>
                 <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
-
-
                     <div class="row">
-                        <label for="inputType" class="col-sm-3   control-label">Your email address: </label>
-                        <div class="col-sm-4">
-                            <input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />
+                        <div class="col-md-3"> </div>
+                        <div class="col-md-3">
+                            <label class="opinion">
+                                Yes <input type="radio"  id="q128" name="opinion" value="1" data-parsley-trigger="change" required="required" />
+                            </label> 
+                            <label class="opinion" >
+                                No <input type="radio" id="q128" name="opinion" value="2" data-parsley-trigger="change" required="required" />
+                            </label> 
+                            <label class="opinion" >
+                                Maybe <input type="radio" id="q128" name="opinion" value="3" data-parsley-trigger="change" required="required" /> 
+                            </label> 
+                                                <!--<input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />-->
                         </div>
                         <p class="thank">Thank you!</p>
                     </div>
-
                     <div class="row">
-                        <div class="col-md-6 ">
-                            <p class=" pull-right text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
+                        <div class="col-md-3">
                         </div>
-
+                        <div class="col-md-3 ">
+                            <p class="text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
+                        </div>
                     </div>
                     <div class="row ">
                         <div class="col-md-3">
                         </div>
-                        <div class="col-md-4  ">
+                        <div class="col-md-3  ">
                             <div class="align-center">
                                 <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
                             </div>
                         </div>
-                        <div class="col-md-2 fb-like-btn pull-right">
+                        <div class="col-md-2 fb-like-btn">
                             <span class='st_facebook_large' displayText='Facebook'></span>
                             <!--<span class='st_twitter_large' displayText='Tweet'></span>-->
                             <!--<span class='st_email_large' displayText='Email'></span>-->
@@ -100,9 +108,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h5>Easy to Play – Hard to Master</h5>
                 </div>
                 <div class="col-md-2 pull-right counter">
-                    <span class="counts" id="site-counts">  <strong><?= $count ?></strong></span>
+                    <span class="counts" id="site-counts">  <strong><?= $yes_count ?></strong></span>
                     &nbsp;&nbsp;
-                      <span class="counts" id="site-counts">  <strong><?= $visits_count ?></strong></span>
+                    <span class="counts" id="site-counts">  <strong><?= $no_count ?></strong></span>
+                    &nbsp;&nbsp;
+                    <span class="counts" id="site-counts">  <strong><?= $maybe_count ?></strong></span>
+                    &nbsp;&nbsp;
+                    <span class="counts" id="site-counts">  <strong><?= $visits_count ?></strong></span>
                 </div>
             </div>
         </div>

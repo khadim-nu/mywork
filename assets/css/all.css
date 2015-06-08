@@ -59,6 +59,10 @@ body{
     border-left: 0px; 
     border-right: 0px; 
     border-radius: 0px;
+    width: 212px;
+}
+.opinion{
+    margin: 5px;
 }
 #logo{
     width: 103%;
@@ -105,10 +109,11 @@ body{
     font-size: 20px;
 }
 .thank{
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
 .fb-like-btn{
     height: 1px;
+    margin-left: 2%;
 }
 #site-visits{
     padding: 1% !important;
