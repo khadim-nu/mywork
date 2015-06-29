@@ -101,6 +101,11 @@ body{
     border-radius: 0px;
     width: 100%;
 }
+.radio-btn{
+   transform: scale(1.5);
+   background: blue;
+  
+}
 .btn-margin{
     margin: 0% 27%;
 }
@@ -121,4 +126,7 @@ body{
 .counts{
      background: #458;
      padding: 3%;
+}
+#email{
+    color: #0086b3;
 }

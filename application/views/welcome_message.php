@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <div id="fb-root"></div>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
+        <script>(function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
                     return;
@@ -57,48 +57,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="row">
-                    <p>We are developing a new version of five-card poker, played by placing cards on a board layout.  It is a combination of poker and a popular word game.</p>
-                    <p>Please let us know if you think you would like to play this game.  Nothing will download as we are simply asking for your opinion.  Thank you.</p>
+                    <p>We are developing a new version of five-card poker, played by placing cards on a board layout.  It is a combination of poker and a popular word game.
+                    Please let us know if you think you would like to play this game.  Nothing will download as we are simply asking for your opinion. Thank you!</p>
                 </div>
-                <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
-                    <div class="row">
-                        <div class="col-md-3"> </div>
-                        <div class="col-md-3">
-                            <label class="opinion">
-                                Yes <input type="radio"  id="q128" name="opinion" value="1" data-parsley-trigger="change" required="required" />
-                            </label> 
-                            <label class="opinion" >
-                                No <input type="radio" id="q128" name="opinion" value="2" data-parsley-trigger="change" required="required" />
-                            </label> 
-                            <label class="opinion" >
-                                Maybe <input type="radio" id="q128" name="opinion" value="3" data-parsley-trigger="change" required="required" /> 
-                            </label> 
-                                                <!--<input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />-->
-                        </div>
-                        <p class="thank">Thank you!</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                        </div>
-                        <div class="col-md-3 ">
-                            <p class="text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-3">
-                        </div>
-                        <div class="col-md-3  ">
-                            <div class="align-center">
-                                <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
+                <div class="col-md-8">
+                    <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
+                        <div class="row">
+                            <div class="col-md-7 text-right">
+                            Would you like to play this game?
+                            </div>
+                            <div class="col-md-5">
+                                <label class="opinion">
+                                    Yes <input type="radio"  id="q128" class="radio-btn" name="opinion" value="1" data-parsley-trigger="change" required="required" />
+                                </label> 
+                                <label class="opinion" >
+                                    No <input type="radio" id="q128" class="radio-btn" name="opinion" value="2" data-parsley-trigger="change" required="required" />
+                                </label> 
+                                <label class="opinion" >
+                                    Maybe <input type="radio" id="q128" class="radio-btn" name="opinion" value="3" data-parsley-trigger="change" required="required" /> 
+                                </label> 
+                                                    <!--<input class="form-control custom" type="email" name="email" data-parsley-trigger="change" required="required" data-parsley-type="email" />-->
+
                             </div>
                         </div>
-                        <div class="col-md-2 fb-like-btn">
-                            <span class='st_facebook_large' displayText='Facebook'></span>
-                            <!--<span class='st_twitter_large' displayText='Tweet'></span>-->
-                            <!--<span class='st_email_large' displayText='Email'></span>-->
+                        <div class="row">
+                            <div class="col-md-7">
+                            </div>
+                            <div class="col-md-5 ">
+                                <p class="text-info"><?= (!empty($this->session->flashdata('message')) ? $this->session->flashdata('message') : "") ?></p> 
+                            </div>
                         </div>
+                        <div class="row ">
+                            <div class="col-md-7">
+                                <span class='st_facebook_large pull-right' displayText='Facebook'></span>
+                            </div>
+                            <div class="col-md-5 ">
+                                <div class="align-center">
+                                    <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
+                                </div>
+                            </div>
+<!--                            <div class="col-md-2 fb-like-btn">
+                                <span class='st_facebook_large' displayText='Facebook'></span>
+                                <span class='st_twitter_large' displayText='Tweet'></span>
+                                <span class='st_email_large' displayText='Email'></span>
+                            </div>-->
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <stong class="heading">For More Information </stong>
+                    <div>
+                    Please contact us at
                     </div>
-                </form>
+                    <div>
+                        <strong id="email"><a href="mailto:rmadzel@hotmail.com?Subject=Poker-with-friends™" target="_top">rmadzel@hotmail.com</a></strong>
+                    </div>
+                </div>
             </div>
             <div class="footer">
                 <div class="col-md-4">
