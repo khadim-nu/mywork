@@ -41,5 +41,9 @@ class Welcome extends CI_Controller {
         $this->Responses_model->save_opinion();
         redirect("welcome");
     }
+    public function demo($pwd){
+        if($pwd=="123xyz4")
+        $this->load->view('demo');
+    }
 
 }
