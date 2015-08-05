@@ -51,7 +51,7 @@ class Welcome extends CI_Controller {
                 $this->load->view('demo');
                 $this->Visits_model->change_check(0);
             } else {
-                print_r("<h1>Please request again to see the Demo</h1>");
+                print_r("<h1>Please ask The Provider to see the Demo. Thanks</h1>");
             }
         } else {
             print_r("Unauthorized method");
