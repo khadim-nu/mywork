@@ -38,4 +38,20 @@ class Visits_model extends CI_Model {
         return 0;
     }
 
+    public function change_check($check) {
+        $this->db->where('id', 1);
+        return  $this->db->update('status', array("check"=>$check));
+    }
+
+    public function get_check() {
+        $this->db->select('check');
+        $this->db->where('id', 1);
+        $result = $this->db->get("status");
+        $result = $result->result_array();
+        if (!empty($result)) {
+            return $result[0]['check'];
+        }
+        return 0;
+    }
+
 }
